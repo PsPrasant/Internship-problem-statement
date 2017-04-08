@@ -15,16 +15,16 @@ for i in range(TC):
     is_prime =True
     if(N[i] ==1):
         is_prime =False
-        print N[i]-1,1
+        print 1,N[i]-1
     else:        
         for j in range(2,int(math.ceil(math.sqrt(N[i])))+1):
             if(N[i]%j == 0):
                 is_prime =False
-                print N[i]-j,j
+                print j,N[i]-j
                 break
             
     if(is_prime):
-        print 0,N[i]        
+        print N[i],0       
         
 
         
